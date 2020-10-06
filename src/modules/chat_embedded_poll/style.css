@@ -59,4 +59,22 @@
 
     display: none;
   }
+
+  .poll-time-bar {
+    overflow: hidden;
+    width: calc(100% - 50px);
+    div {
+      animation: countdown calc(30s) linear forwards;
+      height: 5px;
+      transform-origin: left center;
+      background: linear-gradient(to bottom, red, #800);
+    }
+  }
+}
+
+@keyframes countdown {
+  to {
+    /* More performant than `width` */
+    transform: scaleX(0);
+  }
 }
