@@ -74,7 +74,6 @@
 
 @keyframes countdown {
   to {
-    /* More performant than `width` */
     transform: scaleX(0);
   }
 }
